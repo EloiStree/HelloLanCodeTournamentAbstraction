@@ -7,10 +7,10 @@ Unity Version: https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_a
   
 The network part of the project is outside of this code:  
 - UDP: Fast easy but not compatible on some platform
-  - Unity Version: (To Add)
+  - Unity Version: https://github.com/EloiStree/2020_11_29_upm_udp_thread_in_out_gate
   - Godot Version: (To Add)
 - Websocket: Work on most platform but not on Micro-Controller
-  - Unity Version: (To Add)
+  - Unity Version: https://github.com/EloiStree/2025_05_01_upm_trusted_websocket
   - Godot Version: (To Add)
 
 
