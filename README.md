@@ -3,8 +3,8 @@
 
 Make some code tournament game in real time inside a LAN network to allow coders to learn outside of a library.
 
-Godot version: [https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction)
-Unity version: [https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction)
+Godot version: [https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction)   
+Unity version: [https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction)  
 
 The network part of the project is outside of this code:
 
