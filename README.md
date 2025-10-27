@@ -1,6 +1,6 @@
 # Hello Lan Code Tournament Abstraction
 
-Make some code tournament game in real time to allows coder to learn outside of library.  
+Make some code tournament game in real time inside a of LAN network to allows coder to learn outside of library.  
    
 Godot version: https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction  
 Unity Version: https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction  
