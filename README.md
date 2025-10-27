@@ -16,9 +16,11 @@ The network part of the project is outside of this code:
 
  ---------------
 
+# Concept
+
 You want to create a coding tournament game ?
 
-Easy you just need a bit of in/out.
+Easy you just need a bit of *in/out*.
   - In: some input in IID format.
   - Out: Some byte to give compress high frame information
   - Out: Some text to give game information
