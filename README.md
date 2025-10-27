@@ -1,11 +1,11 @@
 # Hello Lan Code Tournament Abstraction
 
-Make some code tournament game in real time to allows coder to learn outside of library.
-
-Godot version: https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction
-Unity Version: https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction
-
-The network part of the project is outside of this code:
+Make some code tournament game in real time to allows coder to learn outside of library.  
+   
+Godot version: https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction  
+Unity Version: https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction  
+  
+The network part of the project is outside of this code:  
 - UDP: Fast easy but not compatible on some platform
   - Unity Version: (To Add)
   - Godot Version: (To Add)
