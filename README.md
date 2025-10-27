@@ -74,6 +74,9 @@ To have an abstract layer, you have to code the NTP connection and give your gam
 Having the same NTP time allows some crazy magic stuff when you think about it.
 For example, you can sync full map events based on time to avoid sending them to all players through the network.
 
+A code to run NTP on your Raspberry Pi:  
+[https://github.com/EloiStree/2025_01_01_HelloPiOsNtpServer](https://github.com/EloiStree/2025_01_01_HelloPiOsNtpServer)    
+
 # Out: byte array
 
 ## Players Position
