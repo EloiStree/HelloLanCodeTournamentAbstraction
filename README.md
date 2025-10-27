@@ -8,6 +8,8 @@ You want to create an offline coding tournament game where hundreds of playersâ€
 
 > Make some code tournament game in real time inside a LAN network to allow coders to learn outside of a library.
 
+**! Under construction !**
+
 Godot version: [https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_gdp_lan_code_tournament_abstraction)   
 Unity version: [https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction](https://github.com/EloiStree/2025_10_27_upm_lan_code_tournament_abstraction)  
 
