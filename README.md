@@ -132,20 +132,20 @@ So the idea is simple: you are notified of the appearance and destruction of a l
 Bullets:
 
 * Start:
-
+  * Server timestamp (ulong)
+  * Pool ID (byte)
+  * Bullet ID in the Pool ID (int)
+  * Owner of the bullet ID (int)
   * Start Position (float 3)
   * Start Quaternion (float 4)
   * Start Euler Rotation (float 3)
   * Diameter in meters (float)
-  * Server timestamp (ulong)
   * Speed per second in mm (uint)
-  * Owner of the bullet ID (int)
-  * Pool ID (byte)
-  * Bullet ID in the Pool ID (byte)
 * End: depending on the game designer and collision on server
-
-  * End Position (float 3)
   * Server timestamp (ulong)
+  * Pool ID (byte)
+  * Bullet ID in the Pool ID (int)
+  * End Position (float 3)
 
 Warning: some game designs can lead to having 50,000 bullets.
 In those games you will have to make a choice.
