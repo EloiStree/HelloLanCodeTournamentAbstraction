@@ -141,8 +141,7 @@ Bullets:
   * Bullet ID in the Pool ID (int)
   * Owner of the bullet ID (int)
   * Start Position (float 3)
-  * Start Quaternion (float 4)
-  * Start Euler Rotation (float 3)
+  * Start Direction (float 3)
   * Diameter in meters (float)
   * Speed per second in mm (uint)
 * End: depending on the game designer and collision on server
