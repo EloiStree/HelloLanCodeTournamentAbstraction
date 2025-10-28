@@ -83,7 +83,7 @@ A code to run NTP on your Raspberry Pi:
 
 When you have 256 players, you are going to need bytes and not text.
 
-So push Type of Data (int) | Format Used (int) | Number of Players (int) | All players as bytes
+So push Type of Data (int) | Format Used (int) | Number of Players (int) | Size of player element (int) | All players as bytes
 
 Be careful not to push data at 60 fps — you have to transport all that over Wi-Fi.
 
