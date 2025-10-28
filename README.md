@@ -93,25 +93,18 @@ Be careful not to push data at 60 fps — you have to transport all that over Wi
 Outside of a LAN, you can’t update object positions in your game — too much data.
 So for bullets, as an example, I tip you to provide size, start origin, speed, and timestamp NTP.
 
-There are variants for the player position:
-
-* Header | Position (Float 3) | Euler Rotation (Float 3) | Quaternion Rotation (Float 4) | Scale (float)
-
+There are variants for the player position:  
+* Id 0: Header | Position (Float 3) | Euler Rotation (Float 3) | Quaternion Rotation (Float 4) | Scale (float)
   * Full information of the player but 42 bytes per player
-* Header | Position (Float 3) | Euler Rotation (Float 3)
-
+* Id 1: Header | Position (Float 3) | Euler Rotation (Float 3)
   * Minimum, no scaling, 18 bytes
-* Header | Position (Float 2) Map | Position (Float 2) World | Direction (float)
-
+* Id 2: Header | Position (Float 2) Map | Position (Float 2) World | Direction (float)
   * World of Warcraft kind, 20 bytes
-* Header | Position (byte 2) Map as percent 1–100 | Direction (byte)
-
+* Id 3: Header | Position (byte 2) Map as percent 1–100 | Direction (byte)
   * World of Warcraft compressed in a color kind, 3 bytes
-* Header | Position mm (ushort 3) | Direction (byte)
-
+* Id 4: Header | Position mm (ushort 3) | Direction (byte)
   * If your game is only played in 65 meters with millimeter precision, 7 bytes
-* Header | Position cm (ushort 3) | Direction (byte)
-
+* Id 5: Header | Position cm (ushort 3) | Direction (byte)
   * If your game is only played in 650 meters with centimeter precision, 7 bytes
 
 Example: a drone game with 256 players on 650-meter format:
