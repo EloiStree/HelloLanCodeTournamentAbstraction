@@ -83,10 +83,8 @@ A code to run NTP on your Raspberry Pi:
 
 When you have 256 players, you are going to need bytes and not text.
 
-Type of Data (int) | Format Used (int) | Number of Players (int) | Index Element (int) | Size of Player Element (int) | All Players as Bytes
-
 To differentiate player positions from the rest of the game info bytes,
-I suggest using a sequence like 1, 2, 3 … 3, 2, 1 to represent player positions.
+I suggest using a sequence like 1, 2, 3 ..List of player.. 3, 2, 1 to represent player positions.
 
 Be careful not to push data at 60 fps — you have to transport all that over Wi-Fi.
 
@@ -94,19 +92,20 @@ Outside of a LAN, you can’t update object positions in your game — too much 
 So for bullets, as an example, I tip you to provide size, start origin, speed, and timestamp NTP.
 
 There are variants for the player position:  
-* Id 0 | Position (Float 3) | Euler Rotation (Float 3) | Quaternion Rotation (Float 4) | Scale (float)
+* Id 0 | Game Index 0 | Position (Float 3) | Euler Rotation (Float 3) | Quaternion Rotation (Float 4) | Scale (float)
   * Full information of the player but 42 bytes per player
-* Id 1 | Position (Float 3) | Euler Rotation (Float 3)
+  * Quaternion is not the same as Euleur ? Yes, but it means that you need a lib to convert them.
+* Id 1 | Game Index 0 | Position (Float 3) | Euler Rotation (Float 3)
   * Minimum, no scaling, 18 bytes
-* Id 2 | Position (Float 2) Map | Position (Float 2) World | Direction (float)
+* Id 2 | Game Index 0 | Position (Float 2) Map | Position (Float 2) World | Direction (float)
   * World of Warcraft kind, 20 bytes
-* Id 3 | Position (byte 2) Map as percent 1–100 | Direction (byte)
+* Id 3 | Game Index 0 | Position (byte 2) Map as percent 1–100 | Direction (byte)
   * World of Warcraft compressed in a color kind, 3 bytes
-* Id 4 | Position mm (ushort 3) | Direction (byte)
+* Id 4 | Game Index 0 | Position mm (ushort 3) | Direction (byte)
   * If your game is only played in 65 meters with millimeter precision, 7 bytes
-* Id 5 | Position cm (ushort 3) | Direction (byte)
+* Id 5 | Game Index 0 | Position cm (ushort 3) | Direction (byte)
   * If your game is only played in 650 meters with centimeter precision, 7 bytes
-* Id 6 | Position on Screen Percent (float 2) | Direction Counter 360 (float) | Size (float)
+* Id 6 | Game Index 0 | Position on Screen Percent (float 2) | Direction Counter 360 (float) | Size (float)
   * For game with player in a screen 2D space in percent 
 
 Example: a drone game with 256 players on 650-meter format:
