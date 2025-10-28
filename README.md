@@ -92,9 +92,9 @@ Outside of a LAN, you can’t update object positions in your game — too much 
 So for bullets, as an example, I tip you to provide size, start origin, speed, and timestamp NTP.
 
 There are variants for the player position:  
-* Player Claimed ID  | Game Index 0 | Position (Float 3)| Direction (Float 3) | Euler Rotation (Float 3) | Quaternion Rotation (Float 4) | Scale (float)
+* Player Claimed ID  | Game Index 0 | Position (Float 3)|  Quaternion Rotation (Float 4) | Scale (float)
   * Full information of the player but 42 bytes per player
-  * Quaternion is not the same as Euleur ? Yes, but it means that you need a lib to convert them.
+  * I want to give Direction (Float 3) | Euler Rotation (Float 3) | but that 24 bytes to send.. too much. You will need to use math.
 *  Game Index 0 | Position (Float 2) Map | Position (Float 2) World | Direction (float)
   * World of Warcraft kind, 20 bytes
 * Player Claimed ID  | Game Index 0 | Position (byte 2) Map as percent 1–100 | Direction (byte)
