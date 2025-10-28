@@ -86,7 +86,7 @@ When you have 256 players, you are going to need bytes and not text.
 Type of Data (int) | Format Used (int) | Number of Players (int) | Index Element (int) | Size of Player Element (int) | All Players as Bytes
 
 To differentiate player positions from the rest of the game info bytes,
-I suggest using a sequence like 1, 2, 3, 4, 5, 6 … 6, 5, 4, 3, 2, 1 to represent player positions.
+I suggest using a sequence like 1, 2, 3 … 3, 2, 1 to represent player positions.
 
 Be careful not to push data at 60 fps — you have to transport all that over Wi-Fi.
 
@@ -127,7 +127,11 @@ On a LAN game it is okay, but on an online game, that can start to be expensive.
 Most of my games are going to use some bullet hell concepts.
 You can’t update the position of 2000 bullets on the network every 10 frames.
 
+
 So the idea is simple: you are notified of the appearance and destruction of a linear bullet.
+
+To differentiate bullets from the rest of the game info bytes,
+I suggest using a sequence like 3,2,1 … 1,2,3 to represent player positions.
 
 Bullets:
 
